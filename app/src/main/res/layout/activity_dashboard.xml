@@ -48,25 +48,40 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/personal_details_verify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/curve_card"
             android:elevation="2dp"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:padding="5dp">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@tools:sample/avatars"
-                tools:srcCompat="@drawable/kyc" />
+                android:paddingTop="10dp"
+                android:src="@drawable/kyc" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="141dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-72dp"
+                android:layout_marginRight="-5dp"
+                android:paddingLeft="90dp"
+
+                app:srcCompat="@drawable/check" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/inter_medium"
                 android:gravity="center"
                 android:text="Click here for Step 1 :"
@@ -78,6 +93,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="-30dp"
                 android:fontFamily="@font/inter_medium"
                 android:gravity="center"
                 android:text="Your Details And Mobile No. Verification"
@@ -85,32 +101,43 @@
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/document_verify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/curve_card"
             android:elevation="2dp"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@tools:sample/avatars"
-                tools:srcCompat="@drawable/document" />
+
+                app:srcCompat="@drawable/document" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="124dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center|right"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-72dp"
+                android:layout_marginRight="-12dp"
+                android:paddingLeft="90dp"
+
+                app:srcCompat="@drawable/check" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:foregroundGravity="bottom"
                 android:gravity="center"
                 android:text="Click here for Step 2 "
                 android:textColor="#3A3A3A"
@@ -121,48 +148,72 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-10dp"
+                android:foregroundGravity="bottom"
                 android:gravity="center"
                 android:text="Take Selfie and Submit Your ID"
                 android:textColor="#A2A5A8"
-                android:textSize="15dp"
+                android:textSize="16dp"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/address_verify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/curve_card"
             android:elevation="2dp"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:padding="25dp"
+            android:paddingTop="-10dp"
+            android:paddingBottom="-30dp">
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@tools:sample/avatars"
+
                 app:srcCompat="@drawable/address" />
 
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="124dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center|right"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-72dp"
+                android:layout_marginRight="-12dp"
+                android:paddingLeft="90dp"
+
+                app:srcCompat="@drawable/check" />
+
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:foregroundGravity="bottom"
                 android:gravity="center"
-                android:text="Click here for Step 3 "
+                android:text="Click here for Step 3
+"
                 android:textColor="#3A3A3A"
                 android:textSize="13dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-10dp"
+                android:foregroundGravity="bottom"
                 android:gravity="center"
                 android:text="Submit Your Address"
                 android:textColor="#A2A5A8"
-                android:textSize="15dp"
+                android:textSize="16dp"
                 android:textStyle="bold" />
 
         </LinearLayout>
